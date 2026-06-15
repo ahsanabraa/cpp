@@ -1,0 +1,72 @@
+
+#SCE_GROUP:58307E67-009C-48B0-80A0-EE8B7ED6CE25:::Metta
+
+Host metta@40
+	User support
+	HostName 202.145.0.40
+	#SCEConnectionCommand cmd_ssh_hostname
+	#SCEPassword 3BCF588E-C5E6-4FD1-8BF0-A01828497B7A
+	#SCETerminal com.apple.Terminal
+
+Host root
+	User root
+	HostName 202.145.0.40
+	#SCEConnectionCommand cmd_ssh_hostname
+	#SCETerminal com.apple.Terminal
+
+Host wiralab
+	User root
+	HostName 188.166.255.101
+	#SCEConnectionCommand cmd_ssh_hostname
+	#SCEPassword 5D0BD094-6CFB-444D-9883-5F1E6192A889
+	#SCETerminal com.apple.Terminal
+
+Host tofay-agen
+	User root
+	HostName 104.248.154.192
+	#SCEConnectionCommand cmd_ssh_hostname
+	#SCEPassword 6AD4626B-0B62-47A6-9377-801F6E5C4807
+	#SCETerminal com.apple.Terminal
+
+Host frafwiratek@103.127.97.160
+	User frafwiratek
+	HostName 103.127.97.160
+	#SCEConnectionCommand cmd_ssh_hostname
+	#SCETerminal com.apple.Terminal
+
+# passphrase : mukhlis
+Host sandbox|test
+	User mukhlis
+	HostName 103.82.93.169
+	#SCEConnectionCommand cmd_ssh_hostname
+	#SCEPassword 7418A590-3D0C-4344-B8D8-C5F74BF060B0
+	#SCETerminal com.apple.Terminal
+
+Host fe-kostzy
+	User kostzy-frontend
+	HostName 103.179.57.10
+	#SCEConnectionCommand cmd_ssh_hostname
+	#SCEPassword CFB6C352-C4D4-482F-B292-9A72DB8F345A
+	#SCETerminal com.apple.Terminal
+
+Host 103.105.190.17:10000
+	User pbbdesa
+	HostName 103.105.190.17
+	#SCEPassword 11912C28-B5CB-4F1F-B0EE-48A79754DF6A
+
+Host my-vps
+	User root
+	HostName 203.194.113.98
+	#SCEPassword C7CE24CF-8B26-4E85-83D9-B9AD65EA9972
+
+Host altaprima.com
+    HostName ec2-108-136-147-211.ap-southeast-3.compute.amazonaws.com
+    User ubuntu
+    AddKeysToAgent yes
+    IdentityFile ~/.ssh/apsy/apsy_prod_ssh.pem
+
+Host altaprima-stg.com
+    HostName ec2-43-218-65-89.ap-southeast-3.compute.amazonaws.com
+    User ubuntu
+    AddKeysToAgent yes
+    IdentityFile ~/.ssh/apsy/apsy_stag_ssh.pem
